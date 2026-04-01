@@ -1,66 +1,24 @@
 <!DOCTYPE html>
-<html>
+<html lang="id">
 <head>
+<meta charset="UTF-8">
 <title>Dashboard</title>
 <style>
-body { font-family: Arial; margin: 0; }
-.sidebar {
-    width: 200px;
-    height: 100vh;
-    background: #4facfe;
-    color: white;
-    float: left;
-    padding: 20px;
-}
-.sidebar a {
-    display: block;
-    color: white;
-    margin: 10px 0;
-    text-decoration: none;
-}
-.content {
-    margin-left: 220px;
-    padding: 20px;
-}
-.card {
-    display: inline-block;
-    width: 200px;
-    padding: 20px;
-    margin: 10px;
-    background: #f4f4f4;
-    border-radius: 10px;
-    text-align: center;
-}
+body{font-family:Arial;background:#222;color:white;text-align:center;}
+button{padding:10px;margin:10px;background:#ff7200;border:none;}
 </style>
 </head>
+
 <body>
 
-<div class="sidebar">
-    <h3>NUTRIKID</h3>
-    <a href="dashboard.html">Dashboard</a>
-    <a href="stunting.html">Data Stunting</a>
-    <a href="data.html">Data Siswa</a>
-</div>
+<h1>🦁 Dashboard NUTRIKID</h1>
+<p>Total Anak: 30</p>
+<p style="color:red;">Stunting: 20%</p>
+<p style="color:green;">Normal: 80%</p>
 
-<div class="content">
-    <h2>Monitoring Kelas</h2>
-
-    <div class="card">
-        <h3>Kelas 1</h3>
-        <p>20 Siswa</p>
-    </div>
-
-    <div class="card">
-        <h3>Kelas 2</h3>
-        <p>20 Siswa</p>
-    </div>
-
-    <div class="card">
-        <h3>Kelas 3</h3>
-        <p>20 Siswa</p>
-    </div>
-
-</div>
+<button onclick="window.location='input.html'">➕ Input Data</button>
+<button onclick="window.location='hasil.html'">📊 Lihat Hasil</button>
+<button onclick="window.location='login.html'">🚪 Logout</button>
 
 </body>
 </html>
